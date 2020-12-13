@@ -1,0 +1,25 @@
+<form style= "width: 610px; margin: 0 auto; padding-top:30px;">
+  <h1>Transferência entre Conta</h1>
+  <label for="dataHora" >Data</label>
+  <input type="datetime"  name="dataHora" [(ngModel)]="transferencia.dataHora" disabled><br>  
+
+  <label for="valor" >Valor</label>
+  <input type="text"  name="valor" [(ngModel)]="transferencia.valor"><br>
+
+  <label for="hashOrigem" >Hash da Conta de Origem</label>
+  <input type="text"  name="hashOrigem" [(ngModel)]="transferencia.hashOrigem"><br>
+
+  <label for="hashDestino" >Hash da Conta de Destino</label>
+  <input type="text"  name="hashDestino" [(ngModel)]="transferencia.hashDestino"><br>
+ 
+  <p [hidden] = "!error" style="color: red;">
+      {{ errorDesc }}
+  </p> 
+  <br>
+  <button class="btn waves-effect waves-light" >Enviar        
+  </button> 
+  <br>
+
+  
+  
+</form>  

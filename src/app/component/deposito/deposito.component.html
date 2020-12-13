@@ -1,0 +1,22 @@
+<form style= "width: 610px; margin: 0 auto; padding-top:30px;">
+  <h1>Depósito em Conta</h1>
+  <label for="dataHora" >Data</label>
+  <input type="datetime"  name="dataHora" [(ngModel)]="deposito.dataHora"  value="@DateTime.Now.ToString('dd-MM-yyyy')" disabled><br>
+  <label for="hash" >Hash</label>
+  <input type="text"  name="hash" [(ngModel)]="deposito.hash" value="deposito.hash"><br>
+
+  <label for="valor" >Valor</label>
+  <input type="text"  name="valor" [(ngModel)]="deposito.valor" ><br>
+
+  
+  <p [hidden] = "!error" style="color: red;">
+    {{ errorDesc }}
+  </p> 
+  <br>
+  <button class="btn waves-effect waves-light" (click)="realizarDeposito()">Enviar        
+  </button> 
+  <br>
+
+  
+  
+</form>  

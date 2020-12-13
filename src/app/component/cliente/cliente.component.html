@@ -1,0 +1,19 @@
+<div style= "width: 500px; margin: 0 auto; padding-top:30px;">
+  <h1>Cadastrar Cliente</h1>
+  <label for="nome" >Nome</label>
+  <input type="text"  [(ngModel)]="cliente.nome" name="nome"><br> 
+
+  <label for="cpf" >CPF</label>
+  <input  type="text"  [(ngModel)]="cliente.cpf" name="cpf"  mask="000.000.000-00" ><br> 
+
+  <p [hidden] = "!error" style="color: red;">
+    {{ errorDesc }}
+  </p> 
+  
+  <button class="btn waves-effect waves-light" (click)="onCadastrar()">Enviar        
+  </button> 
+  <br>
+ 
+  
+  
+</div>  
