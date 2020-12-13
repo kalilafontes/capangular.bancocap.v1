@@ -1,5 +1,5 @@
 export interface Deposito{
-  dataHora?: Date,
+  dataHora?: string,
   valor?: number,
   hash?: string, 
 }

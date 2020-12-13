@@ -11,7 +11,7 @@ export class SaqueComponent implements OnInit {
 
   error:boolean = false;
   errorDesc:string = "";
-  saque:Saque = {dataHora: new Date()};
+  saque:Saque = {dataHora: new Date().toLocaleString()};
  
   constructor(private router: Router) { }
 

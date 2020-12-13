@@ -1,7 +1,8 @@
 <form style= "width: 610px; margin: 0 auto; padding-top:30px;">
   <h1>Depósito em Conta</h1>
   <label for="dataHora" >Data</label>
-  <input type="datetime"  name="dataHora" [(ngModel)]="deposito.dataHora"  value="@DateTime.Now.ToString('dd-MM-yyyy')" disabled><br>
+  <input type="datetime"  name="dataHora" [(ngModel)]="deposito.dataHora"  disabled><br>
+  
   <label for="hash" >Hash</label>
   <input type="text"  name="hash" [(ngModel)]="deposito.hash" value="deposito.hash"><br>
 

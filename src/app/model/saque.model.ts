@@ -1,5 +1,5 @@
 export interface Saque{
-  dataHora?: Date,
+  dataHora?: string,
   valor?: number,
   hash?: string, 
 }

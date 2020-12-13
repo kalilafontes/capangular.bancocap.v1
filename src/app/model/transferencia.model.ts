@@ -1,5 +1,5 @@
 export interface Transferencia{
-  dataHora?: Date,
+  dataHora?: string,
   valor?: number,
   hashOrigem?: string, 
   hashDestino?: string, 

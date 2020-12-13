@@ -20,11 +20,11 @@ export class ExtratoComponent implements OnInit {
   ];
 
   linhas = [
-      { dataHora: 'Arthur',  valor: 500, tipo: 'Transferência',hashOrigem: '001', hashDestino: '002' },
-      { dataHora: 'Daniel',  valor: 700, tipo: 'Saque',hash: '002'},
-      { dataHora: 'Kalila',  valor: 250, tipo: 'Depósito',hash: '003'},
-      { dataHora: 'Nilson',  valor: 369, tipo: 'Depósito',hash: '004'},
-      { dataHora: 'Reinaldo',  valor: 852, tipo: 'Transferência',hashOrigem: '005', hashDestino: '001' },   
+      { dataHora: '13/12/2020 10:12:55',  valor: 500, tipo: 'Transferência',hashOrigem: '001', hashDestino: '002' },
+      { dataHora: '13/12/2020 12:52:24',  valor: 700, tipo: 'Saque',hash: '002'},
+      { dataHora: '13/12/2020 17:25:14',  valor: 250, tipo: 'Depósito',hash: '003'},
+      { dataHora: '13/12/2020 19:37:19',  valor: 369, tipo: 'Depósito',hash: '004'},
+      { dataHora: '13/12/2020 20:02:32',  valor: 852, tipo: 'Transferência',hashOrigem: '005', hashDestino: '001' },   
   ];
 
   constructor() { }

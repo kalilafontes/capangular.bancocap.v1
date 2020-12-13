@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Deposito } from 'src/app/model/deposito.model';
@@ -10,7 +11,7 @@ import { Deposito } from 'src/app/model/deposito.model';
 export class DepositoComponent implements OnInit {
   error:boolean = false;
   errorDesc:string = "";
-  deposito:Deposito = {dataHora: new Date()};
+  deposito:Deposito = {dataHora: new Date().toLocaleString()};
  
   constructor(private router: Router) { }
 

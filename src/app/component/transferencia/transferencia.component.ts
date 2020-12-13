@@ -10,7 +10,7 @@ import { Transferencia } from 'src/app/model/transferencia.model';
 export class TransferenciaComponent implements OnInit {
   error:boolean = false;
   errorDesc:string = "";
-  transferencia:Transferencia = {dataHora: new Date()};
+  transferencia:Transferencia = {dataHora: new Date().toLocaleString()};
  
   constructor(private router: Router) { }
 
