@@ -11,15 +11,14 @@ import { Conta } from 'src/app/model/conta.model';
 export class ContaComponent implements OnInit { 
   error:boolean = false;
   errorDesc:string = "";
- // contacli = Math.random().toString(36).slice(-8);
   clienteSelecionado:string = "";
   contacli:Conta = {};
   conta:Conta[] = [
-    {cliente: "Arthur", hash: ""},
-    {cliente: "Daniel", hash: ""},
-    {cliente: "Kalila", hash: ""},
-    {cliente: "Nilson", hash: ""},
-    {cliente: "Reinaldo", hash: ""}  
+    {cliente: "Arthur"},
+    {cliente: "Daniel"},
+    {cliente: "Kalila"},
+    {cliente: "Nilson"},
+    {cliente: "Reinaldo"}  
   ];
   
 

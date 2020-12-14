@@ -18,6 +18,7 @@ import { ContaViewComponent } from './component/conta/conta-view/conta-view.comp
 import { UsuarioComponent } from './component/usuario/usuario.component';
 import { IConfig, NgxMaskModule } from 'ngx-mask';
 import { AgGridModule } from 'ag-grid-angular';
+import { ButtonRendererComponent } from './button-renderer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DepositoComponent } from './component/deposito/deposito.component';
 import { SaqueComponent } from './component/saque/saque.component';
