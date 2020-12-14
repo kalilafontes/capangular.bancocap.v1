@@ -23,6 +23,7 @@ import { DepositoComponent } from './component/deposito/deposito.component';
 import { SaqueComponent } from './component/saque/saque.component';
 import { TransferenciaComponent } from './component/transferencia/transferencia.component';
 import { ExtratoComponent } from './component/extrato/extrato.component';
+import { CurrencyMaskModule } from "ng2-currency-mask";
 
 
 const maskConfig: Partial<IConfig> = {
@@ -53,6 +54,7 @@ const maskConfig: Partial<IConfig> = {
     NgxMaskModule.forRoot(maskConfig),
     AgGridModule.withComponents([]),
     BrowserAnimationsModule,
+    CurrencyMaskModule,
    /*  MatToolbarModule,
     MatButtonModule,
     MatDatepickerModule */

@@ -27,7 +27,7 @@ export class SaqueComponent implements OnInit {
       this.error = false;
       alert('Saque realizado com Sucesso!');
 
-      this.router.navigate(['/home']);  
+      this.router.navigate(['/extrato']);  
       
       
     }

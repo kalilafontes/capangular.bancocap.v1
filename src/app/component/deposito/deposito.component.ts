@@ -27,7 +27,7 @@ export class DepositoComponent implements OnInit {
       this.error = false;
       alert('Depósito realizado com Sucesso!');
 
-      this.router.navigate(['/home']);  
+      this.router.navigate(['/extrato']);  
       
       
     }

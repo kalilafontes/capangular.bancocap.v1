@@ -7,7 +7,9 @@
   <input type="text"  name="hash" [(ngModel)]="deposito.hash" value="deposito.hash"><br>
 
   <label for="valor" >Valor</label>
-  <input type="text"  name="valor" [(ngModel)]="deposito.valor" ><br>
+  
+  <input style="text-align:left !important" currencyMask name="valor" 
+   [(ngModel)]="deposito.valor" [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"/><br>
 
   
   <p [hidden] = "!error" style="color: red;">

@@ -4,7 +4,9 @@
   <input type="datetime"  name="dataHora" [(ngModel)]="transferencia.dataHora" disabled><br>  
 
   <label for="valor" >Valor</label>
-  <input type="text"  name="valor" [(ngModel)]="transferencia.valor"><br>
+ 
+  <input style="text-align:left !important" currencyMask name="valor" 
+   [(ngModel)]="transferencia.valor" [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"/><br>
 
   <label for="hashOrigem" >Hash da Conta de Origem</label>
   <input type="text"  name="hashOrigem" [(ngModel)]="transferencia.hashOrigem"><br>
@@ -16,7 +18,7 @@
       {{ errorDesc }}
   </p> 
   <br>
-  <button class="btn waves-effect waves-light" >Enviar        
+  <button class="btn waves-effect waves-light" (click) ="realizarTransferencia()" >Enviar        
   </button> 
   <br>
 
