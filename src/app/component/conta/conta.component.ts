@@ -11,20 +11,29 @@ import { Conta } from 'src/app/model/conta.model';
 export class ContaComponent implements OnInit { 
   error:boolean = false;
   errorDesc:string = "";
+ // contacli = Math.random().toString(36).slice(-8);
   clienteSelecionado:string = "";
+  contacli:Conta = {};
   conta:Conta[] = [
-    {cliente: "Arthur"},
-    {cliente: "Daniel"},
-    {cliente: "Kalila"},
-    {cliente: "Nilson"},
-    {cliente: "Reinaldo"}  
+    {cliente: "Arthur", hash: ""},
+    {cliente: "Daniel", hash: ""},
+    {cliente: "Kalila", hash: ""},
+    {cliente: "Nilson", hash: ""},
+    {cliente: "Reinaldo", hash: ""}  
   ];
+  
 
   constructor(private router: Router) { }
+  
+  gerarHash(hash:string){
+    hash = Math.random().toString(36).slice(-8);
+    console.log(hash)
+  }
 
   onCadastrarConta(formConta : NgForm){   
     console.log(formConta.value.hash, formConta.value.cliente);
-    
+    formConta.value.hash = Math.random().toString(36).slice(-8);
+    console.log(formConta.value.hashe);
      if (formConta.value.hash == "" ) {
       this.error = true;      
       this.errorDesc = "Preencha os campos"
@@ -38,6 +47,7 @@ export class ContaComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.contacli.hash = Math.random().toString(36).slice(-8);
   }
 
 }
